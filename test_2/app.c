@@ -107,9 +107,9 @@ SL_WEAK void app_init(void)
 #endif
 
   //timer interrupt
-  //NVIC_ClearPendingIRQ(LETIMER0_IRQn);
+  NVIC_ClearPendingIRQ(LETIMER0_IRQn);
 
-//  NVIC_EnableIRQ(LETIMER0_IRQn);
+  NVIC_EnableIRQ(LETIMER0_IRQn);
 } // app_init()
 
 
