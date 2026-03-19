@@ -13,6 +13,9 @@ void increment() {
 void decrement() {
     shared_counter--;
     printf("Decremented: %d\n", shared_counter);
+    if(shared_counter<0){
+        printf("Counter value negative!\r\n");
+    }
 }
 
 int main() {
